@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7">
+  <link rel="icon" type="image/png" href="assets/사이트-아이콘-크게.png">
+  <title>미안해</title>
+  <style>
+    :root{color-scheme:light;--ink:#252629;--secondary:#686a70;--paper:#f5f5f7;--white:#fff;--line:#e5e5e9;--green:#55705b;--green-pale:#edf2ed}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","맑은 고딕",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+    .page{width:min(100% - 40px,760px);margin:0 auto}
+    header{height:70px;display:flex;align-items:center;justify-content:flex-end;color:#777980;font-size:13px}
+    .date-note{font-size:12px;color:#8c8e93}
+    main{padding:48px 0 88px}
+    .intro{padding:0 0 34px;border-bottom:1px solid #dedee3;transform-style:preserve-3d}
+    .eyebrow{color:var(--green);font-size:13px;font-weight:700;letter-spacing:.035em}
+    .lead{max-width:650px;margin:15px 0 0;font-size:clamp(29px,6vw,47px);font-weight:650;line-height:1.32;letter-spacing:-.065em}
+    article{padding-top:36px;perspective:1100px}
+    .letter{max-width:670px;margin:auto;padding:clamp(22px,5vw,36px);font-size:16px;line-height:2;color:#44464b;letter-spacing:-.015em;background:#fff;border:1px solid #e6e6e9;border-radius:24px;box-shadow:0 18px 44px #2021240c,0 3px 8px #20212408;transform:rotateX(1deg);transform-style:preserve-3d;transition:transform .3s ease,box-shadow .3s ease}
+    .letter:hover{transform:rotateX(0deg) translateY(-4px) translateZ(8px);box-shadow:0 25px 55px #20212414,0 5px 12px #20212408}
+    .letter p{margin:0 0 22px;transform:translateZ(5px)}
+    .letter p:first-child{color:#292a2e;font-size:18px;font-weight:600;transform:translateZ(12px)}
+    .final-note{margin-top:22px}
+    .photo-figure{margin:44px auto 38px;max-width:610px;padding:15px 15px 0;background:#fff;border:1px solid #e4e4e8;border-radius:22px;box-shadow:0 18px 45px #20212412,0 4px 10px #20212409;overflow:hidden;transform:perspective(900px) rotateY(-1.2deg) rotateX(1.2deg);transform-style:preserve-3d;transition:transform .32s ease,box-shadow .32s ease}
+    .photo-figure:hover{transform:perspective(900px) rotateY(0deg) rotateX(0deg) translateY(-6px) translateZ(12px);box-shadow:0 28px 58px #2021241c,0 8px 15px #2021240c}
+    .photo-figure img{display:block;width:100%;height:auto;border-radius:12px;background:#fff;transform:translateZ(16px);box-shadow:0 12px 22px #20212412}
+    .photo-figure figcaption{padding:13px 4px 16px;text-align:center;color:#777980;font-size:13px}
+    .closing{max-width:670px;margin:50px auto 0;padding:27px 28px;border-radius:22px;background:var(--green-pale);border:1px solid #e1e9e1;box-shadow:0 14px 30px #2021240c,0 3px 8px #20212407;transform:perspective(800px) rotateX(2deg) translateZ(4px);transition:transform .28s ease,box-shadow .28s ease}
+    .closing:hover{transform:perspective(800px) rotateX(0deg) translateY(-4px) translateZ(10px);box-shadow:0 22px 42px #20212415}
+    .closing p{margin:0;color:#3e5142;font-size:clamp(20px,4vw,27px);font-weight:650;line-height:1.65;letter-spacing:-.04em}
+    .signature{max-width:670px;margin:25px auto 0;text-align:right;color:#6f7370;font-size:17px}
+    .signature strong{display:block;margin-top:4px;color:#292a2e;font-size:21px;font-weight:650}
+    footer{padding:0 0 30px;text-align:center;color:#96989d;font-size:12px}
+    @media(max-width:560px){.page{width:min(100% - 28px,760px)}header{height:60px}main{padding:37px 0 62px}.intro{padding-bottom:26px}.lead{margin-top:12px}.letter{font-size:15px;line-height:1.95;border-radius:20px}.letter p{margin-bottom:18px}.letter p:first-child{font-size:17px}.photo-figure{margin:32px auto;padding:9px 9px 0;border-radius:17px}.photo-figure img{border-radius:10px}.photo-figure figcaption{padding:10px 3px 13px}.closing{margin-top:38px;padding:22px;border-radius:18px}.signature{margin-top:20px}}
+    @media(hover:none){.letter:active,.photo-figure:active,.closing:active{transform:perspective(900px) rotateX(2deg) translateY(-3px) translateZ(8px);box-shadow:0 22px 45px #20212418}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.letter,.photo-figure,.closing{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <span class="date-note">천천히 읽어줘</span>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="eyebrow">너한테 하고 싶은 말이 있어</div>
+          <p class="lead">그날 일은 미안해<br>계속 생각해봤어</p>
+      </section>
+      <article>
+        <div class="letter">
+          <p>그날 내가 한 말 때문에 속상했지. 미안해. 그때 바로 사과했어야 했는데 못 해서 더 미안해.</p>
+          <p>나도 그때 속상해서 생각 없이 말했어. 그래도 너한테 기분 나쁘게 말한 건 내 잘못이야. 다음부터는 화났을 때 바로 말하지 말고 한 번 생각할게.</p>
+          <p>싸우고 나서 우리가 같이 게임하고 얘기하던 게 생각났어. 별거 아닌 얘기로 웃고, 같이 놀던 시간이 나는 참 좋았더라. 그때는 그냥 늘 있는 일인 줄 알았는데 지금 생각하니까 더 아쉽네.</p>
+          <p>이 글을 읽었다고 바로 괜찮아져야 하는 건 아니야. 아직 화가 나 있어도 이해해. 네가 괜찮을 때 뭐가 속상했는지 말해주면 이번엔 먼저 잘 들을게.</p>
+          <p>나도 다시 같이 놀고 싶어. 예전처럼 지내려면 나도 잘해야 하니까, 다음에는 네 기분을 생각하고 말할게. 내가 또 잘못하면 그냥 참지 말고 알려줘.</p>
+          <p>웹사이트 만들면서 네가 그려준 그림도 넣었어. 만들 때 우리가 같이 놀던 생각도 났어. 괜히 나 때문에 속상하게 해서 미안해.</p>
+        </div>
+        <figure class="photo-figure">
+          <img src="assets/재성이-그려준-사진.png" alt="친구가 그려준 미안하다는 그림">
+          <figcaption>너가 나에게 그려준 사진</figcaption>
+        </figure>
+        <div class="closing"><p>너랑 노는 시간이 즐거웠어.</p></div>
+        <div class="letter final-note">
+          <p>이 정도 웹사이트는 많이 만들어본 적 없지만, 너를 생각하면서 만들었어. 굳이 받아주지 않아도 돼. 그냥 난 너랑 잘 지내고 싶었던 것뿐이야.</p>
+        </div>
+        <div class="signature">미안한 마음을 담아<strong>재성</strong></div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
